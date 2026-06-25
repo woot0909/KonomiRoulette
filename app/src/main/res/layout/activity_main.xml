@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_base">
+
+    <!-- 마키 사인 로고 -->
+    <LinearLayout
+        android:id="@+id/marqueeSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/bg_surface"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:id="@+id/bulbRowTop"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@color/bg_surface"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOW SHOWING"
+            android:textColor="#444444"
+            android:fontFamily="@font/bebas_neue"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="#f0ede0"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:letterSpacing="0.2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KONOMI"
+            android:textColor="#1a1a1a"
+            android:fontFamily="@font/bebas_neue"
+            android:textSize="46sp"
+            android:gravity="center"
+            android:background="#f0ede0"
+            android:letterSpacing="0.2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ROULETTE"
+            android:textColor="#1a1a1a"
+            android:fontFamily="@font/bebas_neue"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:background="#f0ede0"
+            android:letterSpacing="0.2"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SPIN · EXPLORE"
+            android:textColor="#333333"
+            android:fontFamily="@font/bebas_neue"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="#f0ede0"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:letterSpacing="0.2"/>
+
+        <LinearLayout
+            android:id="@+id/bulbRowBottom"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@color/bg_surface"
+            android:gravity="center_vertical"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"/>
+
+    </LinearLayout>
+
+    <!-- 카테고리 버튼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:id="@+id/btnMovie"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/btn_category_selector"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_camera"
+                android:layout_marginEnd="12dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="영화"
+                android:textColor="@color/text_muted"
+                android:fontFamily="@font/bebas_neue"
+                android:textSize="20sp"
+                android:letterSpacing="0.1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnMusic"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/btn_category_selector"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_lock_silent_mode_off"
+                android:layout_marginEnd="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="음악"
+                android:textColor="@color/text_muted"
+                android:fontFamily="@font/bebas_neue"
+                android:textSize="20sp"
+                android:letterSpacing="0.1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnBook"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/btn_category_selector"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_agenda"
+                android:layout_marginEnd="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="책"
+                android:textColor="@color/text_muted"
+                android:fontFamily="@font/bebas_neue"
+                android:textSize="20sp"
+                android:letterSpacing="0.1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnGame"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/btn_category_selector"
+            android:layout_marginBottom="20dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_compass"
+                android:layout_marginEnd="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="게임"
+                android:textColor="@color/text_muted"
+                android:fontFamily="@font/bebas_neue"
+                android:textSize="20sp"
+                android:letterSpacing="0.1"/>
+        </LinearLayout>
+
+        <!-- 저장고 버튼 -->
+        <LinearLayout
+            android:id="@+id/btnSaved"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/btn_category_selector">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_save"
+                android:layout_marginEnd="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저장된 미션"
+                android:textColor="@color/text_muted"
+                android:fontFamily="@font/bebas_neue"
+                android:textSize="20sp"
+                android:letterSpacing="0.1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

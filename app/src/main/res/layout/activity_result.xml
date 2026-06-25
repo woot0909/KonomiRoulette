@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_base">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="32dp"
+        android:paddingBottom="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@color/bg_surface">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◀"
+            android:textColor="@color/text_muted"
+            android:fontFamily="@font/bebas_neue"
+            android:textSize="20sp"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미션 결과"
+            android:textColor="@color/accent_gold"
+            android:fontFamily="@font/bebas_neue"
+            android:textSize="22sp"
+            android:letterSpacing="0.1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/border_default"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="영화"
+                android:textColor="@color/text_muted"
+                android:fontFamily="@font/bebas_neue"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:id="@+id/tvGenreBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="느와르"
+                    android:textColor="@color/accent_gold"
+                    android:fontFamily="@font/galmuri11_bold"
+                    android:textSize="22sp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/badge_gold"
+                    android:layout_marginEnd="12dp"/>
+
+                <TextView
+                    android:id="@+id/tvWildBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="미래"
+                    android:textColor="@color/accent_gold"
+                    android:fontFamily="@font/galmuri11_bold"
+                    android:textSize="22sp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/badge_gold"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/border_default"
+                android:layout_marginBottom="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/btn_category_normal"
+                android:padding="24dp"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="미션"
+                    android:textColor="@color/text_muted"
+                    android:fontFamily="@font/bebas_neue"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:letterSpacing="0.2"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/tvMission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="미션 텍스트"
+                    android:textColor="@color/text_main"
+                    android:fontFamily="@font/galmuri11_bold"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:lineSpacingMultiplier="1.6"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="▶ 저장하기"
+                android:textColor="@color/accent_gold"
+                android:fontFamily="@font/bebas_neue"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:background="@drawable/btn_category_active"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/btnSearch"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="🔍 지금 바로 검색하기"
+                android:textColor="@color/accent_gold"
+                android:fontFamily="@font/galmuri11_bold"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/btn_category_normal"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/btnRetry"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="▶ 다시 돌리기"
+                android:textColor="@color/text_muted"
+                android:fontFamily="@font/bebas_neue"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:background="@drawable/btn_category_normal"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/btnHome"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="▶ 홈으로"
+                android:textColor="@color/text_muted"
+                android:fontFamily="@font/bebas_neue"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:letterSpacing="0.1"
+                android:background="@drawable/btn_category_normal"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

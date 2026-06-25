@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_base">#1a1a1a</color>
+    <color name="bg_surface">#111111</color>
+    <color name="accent_gold">#FFE566</color>
+    <color name="accent_gold_dark">#1a1800</color>
+    <color name="text_main">#ffffff</color>
+    <color name="text_muted">#aaaaaa</color>
+    <color name="text_dark">#444444</color>
+    <color name="border_default">#2a2a2a</color>
+    <color name="border_gold">#FFE566</color>
+</resources>

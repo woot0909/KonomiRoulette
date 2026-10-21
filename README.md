@@ -5,13 +5,6 @@
 추천 알고리즘은 우리가 이미 좋아하는 것만 계속 보여줍니다. **Konomi Roulette**는 이런 필터버블에서 벗어나기 위해, 룰렛으로 **무작위 문화 미션**을 뽑아주는 안드로이드 앱입니다.
 'Konomi(好み)'는 일본어로 '취향'을 뜻합니다.
 
-<!-- 스크린샷: 메인 / 룰렛 / 결과 / 저장 화면 -->
-<p align="center">
-  <img src="docs/main.png" width="200"/>
-  <img src="docs/roulette.png" width="200"/>
-  <img src="docs/result.png" width="200"/>
-  <img src="docs/saved.png" width="200"/>
-</p>
 
 ## 주요 기능
 
